@@ -2,8 +2,8 @@
 module.exports =  {
   products : {},
   
-  saveProducts : function(products){
-    this.products[products.id]= products;
+  saveProduct : function(product){
+    this.products[product.id]= product;
   },
   listAllProducts : function(){
     var rtnValue =[];
@@ -12,8 +12,8 @@ module.exports =  {
     };
     return rtnValue;
   },
-  findProducts : function(id){
-    return this.productss[id];
+  findProduct : function(id){
+    return this.products[id];
   }
 };
 

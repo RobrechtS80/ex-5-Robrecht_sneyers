@@ -1,8 +1,8 @@
 module.exports =  {
   attendences : {},
   
-  saveAttendences : function(attendences){
-    this.attendences[attendences.id]= attendences;
+  saveAttendence : function(attendence){
+    this.attendences[attendence.id]= attendence;
   },
   listAllAttendences : function(){
     var rtnValue =[];
@@ -11,7 +11,7 @@ module.exports =  {
     };
     return rtnValue;
   },
-  findAttendences : function(id){
+  findAttendence : function(id){
     return this.attendences[id];
   }
 };

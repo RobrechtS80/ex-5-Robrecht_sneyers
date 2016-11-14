@@ -1,8 +1,8 @@
 module.exports =  {
   sales : {},
   
-  saveSales : function(sales){
-    this.sales[sales.id]= sales;
+  saveSale : function(sale){
+    this.sales[sale.id]= sale;
   },
   listAllSales : function(){
     var rtnValue =[];
@@ -11,7 +11,7 @@ module.exports =  {
     };
     return rtnValue;
   },
-  findSales : function(id){
+  findSale : function(id){
     return this.sales[id];
   }
 };
