@@ -5,7 +5,7 @@ var parser = require('body-parser');
 
 // Toevoegen van de code van de dal vervangt onze
 // onze lokale 'datastore'. deze variable bewaart onze state. 
-var dal = require("./storage.js");
+
 var validation = require("./validate.js");
 
 //this shit
