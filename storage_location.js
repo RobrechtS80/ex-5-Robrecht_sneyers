@@ -1,18 +1,18 @@
 module.exports =  {
-  Locations : {},
+  locations : {},
   
-  saveLocation : function(Location){
-    this.Locations[Location.id]= Location;
+  saveLocation : function(location){
+    this.locations[location.id]= location;
   },
   listAllLocations : function(){
     var rtnValue =[];
-    for (var item in this.Locations) {
-      rtnValue.push(this.Locations[item]);
+    for (var item in this.locations) {
+      rtnValue.push(this.locations[item]);
     };
     return rtnValue;
   },
   findLocations : function(id){
-    return this.Locations[id];
+    return this.locations[id];
   }
 };
 
